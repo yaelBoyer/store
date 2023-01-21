@@ -1,0 +1,75 @@
+@import '@nebular/theme/styles/themes/default';
+
+$shadow-green: #00977e;
+
+
+.progress-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.description {
+    margin-top: 0.5rem;
+}
+
+nb-card.size-medium {
+    height: auto;
+}
+
+
+
+nb-card {
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+
+    .icon-container {
+        height: 100%;
+        padding: 0.625rem;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5.75rem;
+        height: 4.75rem;
+        font-size: 3.75rem;
+        border-radius: nb-theme(card-border-radius);
+        transition: width 0.4s ease;
+        transform: translate3d(0, 0, 0);
+        color: nb-theme(text-control-color);
+    }
+
+    &.off {
+        color: nb-theme(text-hint-color);
+
+        .status,
+        .title,
+        .icon {
+            color: nb-theme(text-hint-color);
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        border-left: 1px solid transparent;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .status {
+        text-transform: uppercase;
+    }
+}

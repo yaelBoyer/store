@@ -1,0 +1,149 @@
+@use '@nebular/auth/styles/globals' as *;
+
+:host {
+
+    .form-control-group {
+        margin-bottom: 0.3% !important;
+        margin-top: 1rem !important;
+
+    }
+
+    $auth-layout-padding: 2.5rem;
+
+    nb-card {
+        margin: 0;
+    }
+
+    .navigation .link {
+        display: inline-block;
+        text-decoration: none;
+
+        nb-icon {
+            font-size: 2rem;
+            vertical-align: middle;
+        }
+    }
+
+    .links nb-icon {
+        font-size: 2.5rem;
+    }
+
+    nb-card-body {
+        width: 100%;
+    }
+
+    nb-auth-block {
+        margin: auto;
+    }
+
+    ::ng-deep {
+        nb-layout .layout .layout-container .content .columns nb-layout-column {
+            padding: $auth-layout-padding;
+
+        }
+    }
+
+    .forgot-password {
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control-group {
+        margin-bottom: 2rem;
+    }
+
+    .label-with-link {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+:host {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 50rem;
+
+    ::ng-deep {
+        form {
+            width: 100%;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .caption {
+            margin-top: 0.5rem;
+        }
+
+        .alert {
+            text-align: center;
+        }
+
+        .title {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .sub-title {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-control-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-control-group.accept-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+        .label-with-link {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .another-action {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .sign-in-or-up {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nb-alert {
+
+            .alert-title,
+            .alert-message {
+                margin: 0 0 0.5rem;
+            }
+
+            .alert-message-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    button.appearance-filled.size-medium.shape-rectangle.status-primary.nb-transition {
+        margin-top: 1rem;
+    }
+
+    button.appearance-filled.full-width.size-large.shape-rectangle.status-primary.nb-transition {
+        margin-top: 2rem;
+    }
+}

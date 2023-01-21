@@ -1,0 +1,41 @@
+<nb-card>
+    <div class="icon-container">
+        <div class="icon status-primary">
+            <i class="nb-roller-shades"></i>
+        </div>
+    </div>
+
+    <div class="details">
+        <div class="title h5">{{ countProduct | ngxNumberWithCommas }}</div>
+        <div class="status paragraph-2">Count Product In Shop</div>
+    </div>
+</nb-card>
+
+<nb-card>
+    <div class="icon-container">
+        <div class="icon status-primary">
+            <i class="nb-e-commerce"></i>
+        </div>
+    </div>
+
+    <div class="details">
+        <div class="title h5">{{ countOrders | ngxNumberWithCommas }}</div>
+        <div class="status paragraph-2">Count Orders</div>
+    </div>
+</nb-card>
+
+<nb-card *ngIf="isLogin">
+    <nb-card-body>
+        <h5 *ngIf="!cart&&!order">welcome to first shopping</h5>
+        <h5 *ngIf="cart">You have cart
+            <br> from {{cart.updatedAt| date:'dd/mm/yyyy hh:mm'}}
+            <br>total:
+            {{cartService.calcTotalCart(cart)}}
+        </h5>
+        <h5 *ngIf="order">You Last Order was on
+            <br> {{order.updatedAt| date:'dd/mm/yyyy hh:mm'}}
+            <br>total:
+            {{order.totalPrice}}
+        </h5>
+    </nb-card-body>
+</nb-card>

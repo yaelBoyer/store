@@ -1,0 +1,229 @@
+@use '@nebular/auth/styles/globals' as *;
+
+::ng-deep {
+    nb-sidebar {
+        width: 26rem !important;
+    }
+
+    .nb-theme-default nb-sidebar.expanded {
+        width: 28rem !important;
+    }
+
+    .nb-tree-grid-header-cell,
+    .nb-tree-grid-header-cell {
+        padding: 0.875rem 0.75rem !important;
+    }
+
+    .nb-theme-default nb-sidebar.collapsed {
+        width: 0 !important;
+        padding: 0;
+    }
+
+    .main-container.main-container-fixed {
+        width: 26rem !important;
+    }
+
+    nb-tree-grid-row-toggle {
+        display: none;
+    }
+
+    .nb-theme-default .nb-tree-grid-header-row {
+        font-size: 0.8rem;
+    }
+
+    .nb-theme-default .nb-tree-grid-row {
+        font-size: 0.7rem;
+    }
+}
+
+:host {
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+
+    img.mouse {
+        width: auto;
+        height: 40px;
+    }
+
+    .cell-img {
+        padding: 0px !important;
+    }
+
+    .remove-all {
+        float: right;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .total {
+        padding-top: 15px;
+        color: var(--alert-accent-success-color);
+        text-align: right;
+    }
+}
+
+
+
+:host {
+
+    .form-control-group {
+        margin-bottom: 0.3% !important;
+        margin-top: 1rem !important;
+
+    }
+
+    $auth-layout-padding: 2.5rem;
+
+    nb-card {
+        margin: 0;
+        height: calc(100vh - 2 * #{$auth-layout-padding});
+    }
+
+    .navigation .link {
+        display: inline-block;
+        text-decoration: none;
+
+        nb-icon {
+            font-size: 2rem;
+            vertical-align: middle;
+        }
+    }
+
+    .links nb-icon {
+        font-size: 2.5rem;
+    }
+
+    nb-card-body {
+        display: flex;
+        width: 100%;
+    }
+
+    nb-auth-block {
+        margin: auto;
+    }
+
+    ::ng-deep {
+        nb-layout .layout .layout-container .content .columns nb-layout-column {
+            padding: $auth-layout-padding;
+
+        }
+    }
+
+    .forgot-password {
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control-group {
+        margin-bottom: 2rem;
+    }
+
+    .label-with-link {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+:host {
+    display: block;
+    width: 100%;
+    max-width: 35rem;
+
+    ::ng-deep {
+        form {
+            width: 100%;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .caption {
+            margin-top: 0.5rem;
+        }
+
+        .alert {
+            text-align: center;
+        }
+
+        .title {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .sub-title {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-control-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-control-group.accept-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+        .label-with-link {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 1.75rem;
+
+            .socials {
+                margin-top: 1.5rem;
+            }
+
+            .socials a {
+                margin: 0 1rem;
+                text-decoration: none;
+                vertical-align: middle;
+
+                &.with-icon {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .another-action {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .sign-in-or-up {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nb-alert {
+
+            .alert-title,
+            .alert-message {
+                margin: 0 0 0.5rem;
+            }
+
+            .alert-message-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}

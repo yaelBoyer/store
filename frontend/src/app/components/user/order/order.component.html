@@ -1,0 +1,104 @@
+<nb-layout>
+    <nb-layout-column>
+
+    <div class="row">
+        <div class="col-6">
+            <nb-card class="m-4 card">
+                <nb-card-body>
+                    <app-cart [isAllowChanges]="false"></app-cart>
+                </nb-card-body>
+            </nb-card>
+        </div>
+
+
+        <div class="col-6">
+            <nb-card class="m-4 card">
+                <nb-card-header>
+                    <h1 id="title" class="title">Order</h1>
+                </nb-card-header>
+                <nb-card-body>
+
+                    <form #form2="ngForm" aria-labelledby="title">
+                        <div class="form-control-group">
+                            <label class="label" for="input-name">City:</label>
+                            <nb-select placeholder="City" [(ngModel)]="order.city" #city="ngModel" id="input-name"
+                                name="city" fullWidth fieldSize="large" (dblclick)="complateCity()"
+                                [status]="city.dirty ? (city.invalid  ? 'danger' : 'success') : 'basic'"
+                                [required]="true" [attr.aria-invalid]="city.invalid && city.touched ? true : null">
+                                <nb-option value="1">Tel Aviv</nb-option>
+                                <nb-option value="2">Haifa</nb-option>
+                                <nb-option value="3">Ramat Gan</nb-option>
+                                <nb-option value="4">Bnei Brak</nb-option>
+                            </nb-select>
+                            <ng-container *ngIf="city.invalid && city.touched">
+                                <p class="caption status-danger" *ngIf="city['errors']['required']">
+                                    City is required!
+                                </p>
+                            </ng-container>
+                        </div>
+                        <div class="form-control-group">
+                            <label class="label" for="input-name">Street:</label>
+                            <input nbInput [(ngModel)]="order.street" #street="ngModel" id="input-name" name="street"
+                                placeholder="Street" autofocus fullWidth fieldSize="large" (dblclick)="complateStreet()"
+                                [status]="street.dirty ? (street.invalid  ? 'danger' : 'success') : 'basic'"
+                                [required]="true" [attr.aria-invalid]="street.invalid && street.touched ? true : null">
+                            <ng-container *ngIf="street.invalid && street.touched">
+                                <p class="caption status-danger" *ngIf="street['errors']['required']">
+                                    Street is required!
+                                </p>
+                            </ng-container>
+                        </div>
+                        <div class="form-control-group">
+                            <label class="label" for="input-name">Shipping Date:</label>
+                            <input nbInput [(ngModel)]="order.dateShipping" #dateShipping="ngModel" id="input-name"
+                                [nbDatepicker]="datepicker" name="dateShipping" placeholder="Shipping Date" autofocus
+                                fullWidth fieldSize="large"
+                                [status]="dateShipping.dirty ? (dateShipping.invalid  ? 'danger' : 'success') : 'basic'"
+                                [required]="true"
+                                [attr.aria-invalid]="dateShipping.invalid && dateShipping.touched ? true : null">
+                            <nb-datepicker #datepicker [min]="min" [filter]="filterFn"></nb-datepicker>
+                            <ng-container *ngIf="dateShipping.invalid && dateShipping.touched">
+                                <p class="caption status-danger" *ngIf="dateShipping['errors']['required']">
+                                    Shipping Date is required!
+                                </p>
+                            </ng-container>
+                        </div>
+                        <div class="form-control-group">
+                            <label class="label" for="input-name">Credit Card:</label>
+                            <input nbInput [(ngModel)]="order.cardNum" #cardNum="ngModel" id="input-name" name="cardNum"
+                                placeholder="Credit Card" autofocus fullWidth fieldSize="large"
+                                [status]="cardNum.dirty ? (cardNum.invalid  ? 'danger' : 'success') : 'basic'"
+                                [required]="true"
+                                [attr.aria-invalid]="cardNum.invalid && cardNum.touched ? true : null">
+                            <ng-container *ngIf="cardNum.touched">
+                                <p class="caption status-danger"
+                                    *ngIf="cardNum.invalid && cardNum['errors']['required']">
+                                    Credit Card is required!
+                                </p>
+                                <p class="caption status-danger" *ngIf="messageCreditCard">
+                                    {{messageCreditCard}}
+                                </p>
+                            </ng-container>
+                        </div>
+                    </form>
+                    <button nbButton fullWidth status="primary" size="medium" [disabled]="!form2.valid"
+                        [class.btn-pulse]="true" (click)="orderCart()">
+                        Order
+                    </button>
+                </nb-card-body>
+            </nb-card>
+        </div>
+    </div>
+    </nb-layout-column>
+</nb-layout>
+
+<ng-template #dialog let-data let-ref="dialogRef">
+    <nb-card>
+        <nb-card-header> Order sucess</nb-card-header>
+        <nb-card-body> To Download Reciept <a href="javascript:void(1)" (click)="downloadPage()">Click here</a>
+        </nb-card-body>
+        <nb-card-footer>
+            <button nbButton (click)="ref.close();routeMain()" status="success" size="medium">OK</button>
+        </nb-card-footer>
+    </nb-card>
+</ng-template>

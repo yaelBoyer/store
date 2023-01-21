@@ -1,0 +1,18 @@
+<div class="header-container">
+    <div class="logo-container">
+        <a *ngIf="user&&isShowSide" href="javascript:void(1)" class="sidebar-toggle" (click)="toggleAll()">
+            <nb-icon icon="menu-2-outline"></nb-icon>
+        </a>
+        <a class="logo" href="javascript:void(1)">My shop</a>
+    </div>
+</div>
+
+<div class="header-container">
+    <nb-actions size="small">
+        <nb-action class="user-action">
+            <nb-user *ngIf="user" size="large" name="{{user.firstName}} {{user.lastName}}" [title]="user.role"
+                [showTitle]="true" [nbContextMenu]="userMenu" nbContextMenuTag="my-context-menu">
+            </nb-user>
+        </nb-action>
+    </nb-actions>
+</div>

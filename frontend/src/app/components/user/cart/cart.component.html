@@ -1,0 +1,48 @@
+<button nbButton ghost status="danger" (click)="removeAllItems()" class="remove-all" *ngIf="isAllowChanges">
+    Remove All <nb-icon icon="trash-2-outline"></nb-icon>
+</button>
+
+<button nbButton ghost status="info" (click)="backToShop()" class="position-absolute top-0 end-0 m-3"
+    *ngIf="!isAllowChanges">
+    Back To Shop
+</button>
+
+<nb-form-field *ngIf="!isAllowChanges" class="mb-4">
+    <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
+    <input type="text" nbInput [(ngModel)]="searchName">
+</nb-form-field>
+
+<table class="cdk-table nb-tree-grid" *ngIf="cart">
+    <thead>
+        <tr class="nb-tree-grid-header-row nb-header-row cdk-header-row">
+            <th *ngFor="let col of colums" class="nb-tree-grid-header-cell nb-header-cell cdk-header-cell">{{col}}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="nb-tree-grid-row nb-row cdk-row" *ngFor="let item of cart.cartItems">
+            <td class="nb-tree-grid-cell nb-cell cdk-cell cell-img">
+                <img src="{{baseUrl}}{{item.product.imageUrl}}" alt="mouse corsair" class="mouse">
+            </td>
+            <td class="nb-tree-grid-cell nb-cell cdk-cell" [innerHTML]="item.product.name| highlight : searchName"></td>
+            <td class="nb-tree-grid-cell nb-cell cdk-cell">{{item.count}}</td>
+            <td class="nb-tree-grid-cell nb-cell cdk-cell">{{item.product.price}}</td>
+            <td class="nb-tree-grid-cell nb-cell cdk-cell">{{item.totalPrice}}</td>
+            <td class="nb-tree-grid-cell nb-cell cdk-cell" *ngIf="isAllowChanges">
+                <button nbButton ghost status="danger" (click)="removeItem(item)">
+                    <nb-icon icon="close-circle-outline"></nb-icon>
+                </button>
+            </td>
+
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3" class="total text-control-success"> Total Price: {{totalPrice}}</td>
+        </tr>
+    </tfoot>
+</table>
+<div class="position-absolute bottom-0 end-0" *ngIf="cart&&cart.cartItems.length>0">
+    <button nbButton status="info" *ngIf="isAllowChanges&&cart" class="full-right" (click)="order()">Order</button>
+</div>

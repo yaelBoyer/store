@@ -1,0 +1,11 @@
+
+    <nb-card>
+        <nb-card-header>Enter Count</nb-card-header>
+        <nb-card-body>
+            <input #count nbInput placeholder="count" type="number">
+        </nb-card-body>
+        <nb-card-footer>
+            <button nbButton status="danger" (click)="cancel()">Cancel</button>
+            <button nbButton status="success" (click)="submit(count.value)">Submit</button>
+        </nb-card-footer>
+    </nb-card>

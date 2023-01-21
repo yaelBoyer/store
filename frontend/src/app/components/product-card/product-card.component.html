@@ -1,0 +1,17 @@
+<nb-card>
+    <nb-card-body>
+        <div class="card">
+            <div class="imgBox">
+                <img src="{{baseUrl}}{{product.imageUrl}}" alt="mouse corsair" class="mouse">
+            </div>
+            <div class="contentBox">
+                <h3>{{product.name}}</h3>
+                <h5>{{product.description}}</h5>
+                <h2 class="price">{{product.price}} $</h2>
+                <a href="javascript:void(1)" class="buy" *ngIf="role.toString()=='USER'" (click)="open()">Add To
+                    Cart</a>
+                <a href="javascript:void(1)" class="buy" *ngIf="role.toString()=='ADMIN'" (click)="editAdmin()">Edit</a>
+            </div>
+        </div>
+    </nb-card-body>
+</nb-card>

@@ -1,0 +1,9 @@
+<nb-layout>
+    <nb-sidebar tag="admin">
+        <app-add-product [product]="product"></app-add-product>
+    </nb-sidebar>
+
+    <nb-layout-column class="colored-column-warning">
+        <app-product-list (editProductAdmin)="editAdmin($event)"></app-product-list>
+    </nb-layout-column>
+</nb-layout>

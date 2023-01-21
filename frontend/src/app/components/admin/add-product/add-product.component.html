@@ -1,0 +1,96 @@
+<button nbButton hero status="success" (click)="addNew()">+</button>
+
+<div *ngIf="product">
+    <h4 id="title" class="title" *ngIf="product._id">{{product._id?'Edit':'Add'}} Product</h4>
+    <!-- <nb-alert *ngIf="errors?.length && !submitted" outline="danger" role="alert">
+        <p class="alert-title"><b>Oh snap!</b></p>
+        <ul class="alert-message-list">
+            <li *ngFor="let error of errors" class="alert-message">{{ error }}</li>
+        </ul>
+    </nb-alert>
+
+    <nb-alert *ngIf="messages?.length && !submitted" outline="success" role="alert">
+        <p class="alert-title"><b>Ok!</b></p>
+        <ul class="alert-message-list">
+            <li *ngFor="let message of messages" class="alert-message">{{ message }}</li>
+        </ul>
+    </nb-alert> -->
+
+    <form (ngSubmit)="onFormSubmit()" #form="ngForm" aria-labelledby="title">
+
+        <div class="form-control-group">
+            <label class="label" for="input-email">Name:</label>
+            <input nbInput fullWidth [(ngModel)]="product.name" #name="ngModel" name="name" id="input-name"
+                placeholder="Name Product" fieldSize="large" autofocus
+                [status]="name.dirty ? (name.invalid  ? 'danger' : 'success') : 'basic'" [required]="true"
+                [attr.aria-invalid]="name.invalid && name.touched ? true : null">
+            <ng-container *ngIf="name.invalid && name.touched">
+                <p class="caption status-danger" *ngIf="name['errors']['required']">
+                    Name is required!
+                </p>
+            </ng-container>
+        </div>
+
+        <div class="form-control-group">
+            <label class="label" for="input-email">Price:</label>
+            <input nbInput fullWidth [(ngModel)]="product.price" #price="ngModel" name="price" id="input-name"
+                placeholder="Price" fieldSize="large" autofocus type="number"
+                [status]="price.dirty ? (price.invalid  ? 'danger' : 'success') : 'basic'" [required]="true"
+                [attr.aria-invalid]="price.invalid && price.touched ? true : null">
+            <ng-container *ngIf="price.invalid && price.touched">
+                <p class="caption status-danger" *ngIf="price['errors']['required']">
+                    Price is required!
+                </p>
+            </ng-container>
+        </div>
+
+
+        <div class="form-control-group">
+            <label class="label" for="input-name">Category:</label>
+            <nb-select placeholder="Category" [(ngModel)]="product.category" #category="ngModel" id="input-name"
+                name="city" fullWidth fieldSize="large"
+                [status]="category.dirty ? (category.invalid  ? 'danger' : 'success') : 'basic'" [required]="true"
+                [attr.aria-invalid]="category.invalid && category.touched ? true : null">
+                <nb-option [value]="c._id" *ngFor="let c of categories">{{c.name}}</nb-option>
+            </nb-select>
+            <ng-container *ngIf="category.invalid && category.touched">
+                <p class="caption status-danger" *ngIf="category['errors']['required']">
+                    Category is required!
+                </p>
+            </ng-container>
+        </div>
+
+        <div class="form-control-group">
+            <label class="label" for="input-name">Image:</label>
+            <div class="custom-file">
+                <input type="file" nbInput fullWidth class="custom-file-input" id="customFile" name="uploadedImage"
+                    (change)="onFileSelect($event)" #UploadFileInput>
+                <label class="custom-file-label" for="customFile">{{fileInputLabel || 'Choose File'}}</label>
+            </div>
+        </div>
+
+        <button nbButton fullWidth status="primary" size="large" class="mt-3" [disabled]="!form.valid">
+            OK
+        </button>
+    </form>
+</div>
+<!-- 
+<div class="container">
+    <h3>Upload File</h3>
+
+
+    <form [formGroup]="fileUploadForm" id="form" (ngSubmit)="onFormSubmit()">
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <h6 class="head-title margin-top-8"><span>Select Image File</span></h6>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6"> <button class="btn btn-primary" type="submit">Upload</button> </div>
+
+        </div>
+    </form>
+
+</div> -->

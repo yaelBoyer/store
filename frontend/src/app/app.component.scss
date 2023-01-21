@@ -1,0 +1,9 @@
+@import 'bootstrap/scss/mixins/breakpoints';
+@import '@nebular/theme/styles/global/breakpoints';
+@import '../them.scss';
+
+@include nb-install-component() {
+    nb-layout-column {
+        padding: 0px !important;
+    }
+}

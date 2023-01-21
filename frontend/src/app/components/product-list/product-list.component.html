@@ -1,0 +1,24 @@
+<nb-card>
+    <nb-card-body>
+
+        <nb-actions size="medium">
+            <nb-action class="control-item">
+                <nb-search type="curtain" tag="search-input-event"></nb-search>
+            </nb-action>
+            <nb-action>
+                <a href="javascript:void(1)" (click)="getAllProducts()">All</a>
+            </nb-action>
+            <nb-action *ngFor="let cat of categories">
+                <a href="javascript:void(1)" (click)="getProductsByCategory(cat._id)">{{cat.name}}</a>
+            </nb-action>
+        </nb-actions>
+
+    </nb-card-body>
+</nb-card>
+<div class="container-fluid" *ngIf="products">
+    <div class="row">
+        <div class="col-sm-12 col-md-3" *ngFor="let p of products">
+            <app-product-card (editProductAdmin)="editAdmin($event)" [product]="p"></app-product-card>
+        </div>
+    </div>
+</div>
