@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "63bd9f9a500d8ffd37da1b1e"
+  },
+  "name": "milk1",
+  "price": 15,
+  "imageUrl": "uploads/db5a7352-e0f3-4d90-9bdb-05b55fac97ce.PNG",
+  "productId": "t9Gk3G-F7z",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673371547498"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673912149870"
+    }
+  },
+  "__v": 0,
+  "category": {
+    "$oid": "63bda047b2d057e6f40d112d"
+  }
+},{
+  "_id": {
+    "$oid": "63bdd83b65cca60a1ac9d50a"
+  },
+  "name": "milk1",
+  "price": 15,
+  "imageUrl": "uploads/8279fc7e-b372-406d-abf2-0e253e4825b1.PNG",
+  "productId": "8EPF_UvQtt",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673386043243"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673386043243"
+    }
+  },
+  "__v": 0,
+  "category": {
+    "$oid": "63bda065b2d057e6f40d112e"
+  }
+},{
+  "_id": {
+    "$oid": "63c5dfd05e14b4d6f0ec2b86"
+  },
+  "name": "p1",
+  "category": {
+    "$oid": "63bd9f74b2d057e6f40d112c"
+  },
+  "price": 12,
+  "imageUrl": "uploads/ac8e7f78-b01c-480c-9b8d-48ff2d5159a1.PNG",
+  "productId": "VCuErGqgxc",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673912272597"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673912272597"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c5e05b5e14b4d6f0ec2b99"
+  },
+  "name": "yy",
+  "category": {
+    "$oid": "63bda047b2d057e6f40d112d"
+  },
+  "price": 33,
+  "imageUrl": "uploads/548d0256-2389-4e19-bba3-9574e61e50ca.PNG",
+  "productId": "jLXtSIyUj2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673912411933"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673912411933"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c5e0925e14b4d6f0ec2ba1"
+  },
+  "name": "rrr",
+  "category": {
+    "$oid": "63bda065b2d057e6f40d112e"
+  },
+  "price": 6,
+  "imageUrl": "uploads/6238b90a-ab4e-4859-912e-fea081975adf.PNG",
+  "productId": "BsD-BVmGSc",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673912466026"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673912466026"
+    }
+  },
+  "__v": 0
+}]

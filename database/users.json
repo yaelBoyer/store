@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "63aeee00045a462d5c480ed9"
+  },
+  "email": "c207@gmail.com",
+  "password": "$2b$10$umtVmnRk.p7PI/WYioW80emjcslk/xL4bggBX3yiEWPyhCAbQdGz.",
+  "name": "chaya",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672408576594"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672408576594"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "firstName": "chaya",
+  "lastName": "wach",
+  "tz": "207322868",
+  "city": "4",
+  "street": "isr",
+  "email": "c0556777462@gmail.com",
+  "password": "$2b$10$orKmvDK/jWbs8uXvZ93H4uBblDMfQ9JVsdtJU9Y5v4wXDHxkO/QBK",
+  "role": "ADMIN",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673131357012"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673131357012"
+    }
+  },
+  "__v": 0
+}]

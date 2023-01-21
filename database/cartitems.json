@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "63c2ef3743057506d3135886"
+  },
+  "product": {
+    "$oid": "63bd9f9a500d8ffd37da1b1e"
+  },
+  "count": 7,
+  "totalPrice": 35,
+  "cartItemId": "ypi1pmz54w",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673719608001"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673719608001"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c476fc23f0043c03ad2be7"
+  },
+  "product": {
+    "$oid": "63bd9f9a500d8ffd37da1b1e"
+  },
+  "count": 5,
+  "totalPrice": 25,
+  "cartItemId": "TLeHEOo6_B",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673819900404"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673819900404"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c4770223f0043c03ad2bed"
+  },
+  "product": {
+    "$oid": "63bdd83b65cca60a1ac9d50a"
+  },
+  "count": 4,
+  "totalPrice": 60,
+  "cartItemId": "44TUqxx097",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673819906114"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673819916633"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c4783423f0043c03ad2c18"
+  },
+  "product": {
+    "$oid": "63bdd83b65cca60a1ac9d50a"
+  },
+  "count": 5,
+  "totalPrice": 75,
+  "cartItemId": "3y8eIJRQhl",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820212012"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673820213193"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c4788023f0043c03ad2c4b"
+  },
+  "product": {
+    "$oid": "63bd9f9a500d8ffd37da1b1e"
+  },
+  "count": 33,
+  "totalPrice": 165,
+  "cartItemId": "-lrcUHv97J",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820288726"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673820288726"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c4788323f0043c03ad2c51"
+  },
+  "product": {
+    "$oid": "63bdd83b65cca60a1ac9d50a"
+  },
+  "count": 44,
+  "totalPrice": 660,
+  "cartItemId": "OiOvD50aYb",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820291589"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673820293467"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c5c503cbc0b1c86fea28ee"
+  },
+  "product": {
+    "$oid": "63bdd83b65cca60a1ac9d50a"
+  },
+  "count": 55,
+  "totalPrice": 825,
+  "cartItemId": "arH6aIBi8R",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673905414515"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673906401529"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c5c8d2cbc0b1c86fea2918"
+  },
+  "product": {
+    "$oid": "63bd9f9a500d8ffd37da1b1e"
+  },
+  "count": 6,
+  "totalPrice": 30,
+  "cartItemId": "gTYjAHMVkW",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673906392105"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673906392105"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c5cfb3cbc0b1c86fea2965"
+  },
+  "product": {
+    "$oid": "63bdd83b65cca60a1ac9d50a"
+  },
+  "count": 3,
+  "totalPrice": 45,
+  "cartItemId": "Ha71QKx8Hm",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673908147238"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673908149200"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "63c020ceecfd27a13539464a"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": true,
+  "cartItems": [
+    {
+      "$oid": "63c2ef3743057506d3135886"
+    }
+  ],
+  "cartId": "x0Cibj3GsV",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673535697219"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673819356040"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c476b223f0043c03ad2bd3"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": true,
+  "cartItems": [
+    {
+      "$oid": "63c476fc23f0043c03ad2be7"
+    },
+    {
+      "$oid": "63c4770223f0043c03ad2bed"
+    }
+  ],
+  "cartId": "PgsrMpQNUF",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673819826541"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673820031342"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c4782e23f0043c03ad2c12"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": true,
+  "cartItems": [
+    {
+      "$oid": "63c4783423f0043c03ad2c18"
+    }
+  ],
+  "cartId": "q7KDnWwDj3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820206907"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673820249376"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c4787d23f0043c03ad2c45"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": true,
+  "cartItems": [
+    {
+      "$oid": "63c4788023f0043c03ad2c4b"
+    },
+    {
+      "$oid": "63c4788323f0043c03ad2c51"
+    }
+  ],
+  "cartId": "bR1uXIhVtm",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820285155"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673820322364"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c478cd23f0043c03ad2c71"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": true,
+  "cartItems": [
+    {
+      "$oid": "63c5c503cbc0b1c86fea28ee"
+    },
+    {
+      "$oid": "63c5c8d2cbc0b1c86fea2918"
+    }
+  ],
+  "cartId": "ujUg6kzoUF",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820365166"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673908105022"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c479238b33531e509d582c"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": true,
+  "cartItems": [
+    {
+      "$oid": "63c5cfb3cbc0b1c86fea2965"
+    }
+  ],
+  "cartId": "YD_HTyLAfr",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673820451501"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673908168421"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c5d01bcbc0b1c86fea2988"
+  },
+  "user": {
+    "$oid": "63b9f55d87416da4cd0d9a62"
+  },
+  "ordered": false,
+  "cartItems": [],
+  "cartId": "F2MZjc6Cqo",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673908251868"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673908251868"
+    }
+  },
+  "__v": 0
+}]

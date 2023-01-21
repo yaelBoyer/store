@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "63bd9f74b2d057e6f40d112c"
+  },
+  "name": "food",
+  "categoryId": "t9Gk3G-F76"
+},{
+  "_id": {
+    "$oid": "63bda047b2d057e6f40d112d"
+  },
+  "name": "milk",
+  "categoryId": "t0Gk3G-F7z"
+},{
+  "_id": {
+    "$oid": "63bda065b2d057e6f40d112e"
+  },
+  "name": "fruit",
+  "categoryId": "t9Gi3G-F7z"
+},{
+  "_id": {
+    "$oid": "63bda080b2d057e6f40d112f"
+  },
+  "name": "meat",
+  "categoryId": "t9Gk3G-g7z"
+}]

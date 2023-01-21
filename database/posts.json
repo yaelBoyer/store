@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "63aeef29045a462d5c480edd"
+  },
+  "title": "A post title",
+  "body": "Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text Some HTML text",
+  "user": {
+    "$oid": "63aeee9b045a462d5c480edc"
+  },
+  "postId": "V6dJ4uFNtV",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672408873359"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672408873359"
+    }
+  },
+  "__v": 0
+}]
