@@ -1,0 +1,17 @@
+// /* You can add global styles to this file, and also import other style files */
+@use '@nebular/auth/styles/globals' as *;
+@use '@nebular/theme/styles/globals' as *;
+@forward '@nebular/theme/styles/theming';
+@use '@nebular/theme/styles/theming' as *;
+@use '@nebular/theme/styles/themes/default';
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// framework component styles
+
+// install the framework styles
+@include nb-install() {
+  @include nb-theme-global();
+}
